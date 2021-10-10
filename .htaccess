@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /kampungkuliner/
+Options +FollowSymLinks
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^admin$ admin.php
+RewriteRule ^beranda_admin$ admin.php?t_admin=beranda_admin
+
+
+# X-XSS-Protection
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Protect database config file
+<Files env.php>
+    deny from all
+</Files>
+Options All -Indexes

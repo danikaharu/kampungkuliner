@@ -18,8 +18,12 @@
 </head> 
 <style>
     .sidebar-head{
-      background-color: #55C771;
+      background-color: #FBB62B;
     }
+    .nav-blue{
+      background-color: #1584A2;
+    }
+    
     .bg-login {
       background-image: url('public/dist/img/bg1.png');
       background-attachment: fixed;
@@ -33,5 +37,6 @@
       background-color: #55C771 !important;
       border-color: #55C771 !important ;
     }
+    
 
   </style>

@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Blank Page</h1>
+                    <h1>Master Lapak</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -19,28 +19,63 @@
     <!-- Main content -->
     <section class="content">
 
-        <!-- Default box -->
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Title</h3>
-
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                        <i class="fas fa-minus"></i></button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-                        <i class="fas fa-times"></i></button>
+        <div class="row">
+            <!-- Datatables -->
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h5 class="m-0 font-weight-bold text-primary">Data Lapak</h5>
+                        <a href="tambah_berita.php" class="btn btn-outline-primary mb-1 ml-auto"><i class="fas fa-plus fa-sm"></i></a>
+                    </div>
+                    <div class="table-responsive p-3">
+                        <table class="table align-items-center table-flush" id="dataTable">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>No</th>
+                                    <th>ID Lapak</th>
+                                    <th>Nama Lapak</th>
+                                    <th>No Telp</th>
+                                    <th>No WhatsApp</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <?php
+                                        include '../koneksi/koneksi.php';
+                                        $i = 1;
+                                        $dataBerita = mysqli_query($koneksi, "SELECT * FROM berita");
+                                        while ($d = mysqli_fetch_array($dataBerita)) {
+                                        ?>
+                                    <tr>
+                                        <td class="border-0"><?= $i++ ?></td>
+                                        <td class="border-0"><?= $d['id_berita']; ?></td>
+                                        <td class="border-0 fw-bold">
+                                            <?= $d['judul']; ?>
+                                        </td>
+                                        <td class="border-0">
+                                            <?= $d['isi']; ?>
+                                        </td>
+                                        <td class="border-0">
+                                            <?= $d['caption_gambar']; ?>
+                                        </td>
+                                        <td>
+                                            <?= date('Y-m-d', strtotime($d['tanggal'])) ?>
+                                        </td>
+                                        <td class="border-0">
+                                            <a href="edit_berita.php?id=<?php echo $d['id_berita']; ?>"><i class="fas fa-edit"></i></a>
+                                            <a href="aksi/hapus_berita.php?id=<?php echo $d['id_berita']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                        }
+                                ?> -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="card-body">
-                Start creating your amazing application!
-            </div>
-            <!-- /.card-body -->
-            <div class="card-footer">
-                Footer
-            </div>
-            <!-- /.card-footer-->
+
         </div>
-        <!-- /.card -->
 
     </section>
     <!-- /.content -->

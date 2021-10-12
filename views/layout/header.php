@@ -9,8 +9,10 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= $base_url ?>public/assets/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?= $base_url ?>public/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?= $base_url ?>public/assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->

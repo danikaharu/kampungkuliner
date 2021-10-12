@@ -1,8 +1,8 @@
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed"> 
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand nav-blue text-white">
+  <nav class="main-header navbar navbar-blue navbar-expand  navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -12,10 +12,6 @@
         <div class="text-white nav-link" role="button">Kampung Kuliner Desa Ombulo & Desa Yosonegoro</div>
       </li>
     </ul>
-
-    <!-- SEARCH FORM -->
-  
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->

@@ -40,35 +40,31 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- <?php
-                                        include '../koneksi/koneksi.php';
-                                        $i = 1;
-                                        $dataBerita = mysqli_query($koneksi, "SELECT * FROM berita");
-                                        while ($d = mysqli_fetch_array($dataBerita)) {
-                                        ?>
+                                <?php
+                                $i = 1;
+                                $dataLapak = mysqli_query($mysqli, "SELECT * FROM lapak");
+                                while ($d = mysqli_fetch_array($dataLapak)) {
+                                ?>
                                     <tr>
                                         <td class="border-0"><?= $i++ ?></td>
-                                        <td class="border-0"><?= $d['id_berita']; ?></td>
+                                        <td class="border-0"><?= $d['id_lapak']; ?></td>
                                         <td class="border-0 fw-bold">
-                                            <?= $d['judul']; ?>
+                                            <?= $d['nama']; ?>
                                         </td>
                                         <td class="border-0">
-                                            <?= $d['isi']; ?>
+                                            <?= $d['no_telp']; ?>
                                         </td>
                                         <td class="border-0">
-                                            <?= $d['caption_gambar']; ?>
-                                        </td>
-                                        <td>
-                                            <?= date('Y-m-d', strtotime($d['tanggal'])) ?>
+                                            <?= $d['no_wa']; ?>
                                         </td>
                                         <td class="border-0">
-                                            <a href="edit_berita.php?id=<?php echo $d['id_berita']; ?>"><i class="fas fa-edit"></i></a>
-                                            <a href="aksi/hapus_berita.php?id=<?php echo $d['id_berita']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
+                                            <a href="edit_berita.php?id=<?php echo $d['id_lapak']; ?>"><i class="fas fa-edit"></i></a>
+                                            <a href="aksi/hapus_berita.php?id=<?php echo $d['id_lapak']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
                                         </td>
                                     </tr>
                                 <?php
-                                        }
-                                ?> -->
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>

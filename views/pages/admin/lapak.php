@@ -8,8 +8,8 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Blank Page</li>
+                        <li class="breadcrumb-item"><a href="<?= $base_url ?>beranda_admin">Home</a></li>
+                        <li class="breadcrumb-item active">Lapak</li>
                     </ol>
                 </div>
             </div>

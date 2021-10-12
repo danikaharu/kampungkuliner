@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^admin$ admin.php
 RewriteRule ^beranda_admin$ admin.php?t_admin=beranda_admin
 RewriteRule ^lapak$ admin.php?t_admin=lapak
+RewriteRule ^profil_ombulo$ admin.php?t_admin=profil_ombulo
 
 
 # X-XSS-Protection

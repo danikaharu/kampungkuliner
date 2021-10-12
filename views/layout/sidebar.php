@@ -27,8 +27,8 @@
 
 
         <li class="nav-item">
-          <a href="../gallery.html" class="nav-link">
-            <i class="nav-icon <?= $icon; ?>"></i>
+          <a href="<?= $base_url ?>beranda_admin" class="nav-link">
+            <i class="nav-icon fas fa-tv"></i>
             <p>
               Beranda
             </p>
@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-chart-pie"></i>
+            <i class="nav-icon fas fa-home"></i>
             <p>
               Profil Desa
               <i class="right fas fa-angle-left"></i>
@@ -44,7 +44,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../charts/chartjs.html" class="nav-link">
+              <a href="<?= $base_url ?>profil_ombulo" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Desa Ombulo</p>
               </a>
@@ -57,7 +57,15 @@
             </li>
           </ul>
         </li>
-      
+        <li class="nav-item">
+          <a href="<?= $base_url ?>lapak" class="nav-link">
+            <i class="nav-icon fas fa-store"></i>
+            <p>
+              Lapak
+            </p>
+          </a>
+        </li>
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

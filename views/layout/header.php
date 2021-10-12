@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +18,17 @@
   <link rel="stylesheet" href="<?= $base_url ?>public/assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head> 
-<style>
-    .sidebar-head{
+  <!-- SummerNote CSS -->
+  <link href="<?= $base_url ?>public/assets/plugins/summernote/summernote.min.css" rel="stylesheet">
+  <style>
+    .sidebar-head {
       background-color: #FBB62B;
     }
-    .nav-blue{
+
+    .nav-blue {
       background-color: #1584A2;
     }
-    
+
     .bg-login {
       background-image: url('public/dist/img/bg1.png');
       background-attachment: fixed;
@@ -35,10 +38,10 @@
       padding-bottom: 0px;
     }
 
-    .pagination > li.active > a, .pagination > li.active > span {
+    .pagination>li.active>a,
+    .pagination>li.active>span {
       background-color: #55C771 !important;
-      border-color: #55C771 !important ;
+      border-color: #55C771 !important;
     }
-    
-
   </style>
+</head>

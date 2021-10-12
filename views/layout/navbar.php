@@ -24,7 +24,11 @@
           <a href="#" class="dropdown-item">
             <i class="fas fa-sign-out-alt"></i> Logout
           </a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>

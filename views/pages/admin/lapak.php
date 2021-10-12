@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?= $base_url ?>beranda_admin">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?= $base_url ?>beranda_admin">Beranda</a></li>
                         <li class="breadcrumb-item active">Lapak</li>
                     </ol>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="card mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                         <h5 class="m-0 font-weight-bold text-primary">Data Lapak</h5>
-                        <a href="tambah_berita.php" class="btn btn-outline-primary mb-1 ml-auto"><i class="fas fa-plus fa-sm"></i></a>
+                        <a href="<?= $base_url ?>tambah_lapak" class="btn btn-outline-primary mb-1 ml-auto"><i class="fas fa-plus fa-sm"></i></a>
                     </div>
                     <div class="table-responsive p-3">
                         <table class="table align-items-center table-flush" id="dataTable">

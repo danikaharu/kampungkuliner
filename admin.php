@@ -23,5 +23,3 @@ if(isset($_GET['t_admin']) && $_GET['t_admin'] == 'beranda_admin'){
 
 
 include 'views/layout/footer.php';
-
-?>

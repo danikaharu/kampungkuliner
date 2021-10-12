@@ -15,4 +15,23 @@
   <link rel="stylesheet" href="<?= $base_url ?>public/assets/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head>
+</head> 
+<style>
+    .sidebar-head{
+      background-color: #55C771;
+    }
+    .bg-login {
+      background-image: url('public/dist/img/bg1.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+
+    .pagination > li.active > a, .pagination > li.active > span {
+      background-color: #55C771 !important;
+      border-color: #55C771 !important ;
+    }
+
+  </style>

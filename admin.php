@@ -16,6 +16,9 @@ if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'beranda_admin') {
 } else if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'tambah_lapak') {
     $title = 'Tambah Lapak';
     $icon = 'fas fa-store';
+} else if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'edit_lapak') {
+    $title = 'Edit Lapak';
+    $icon = 'fas fa-store';
 }
 
 
@@ -32,6 +35,8 @@ if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'beranda_admin') {
     include 'views/pages/admin/lapak.php';
 } else if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'tambah_lapak') {
     include 'views/pages/admin/tambah_lapak.php';
+} else if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'edit_lapak') {
+    include 'views/pages/admin/edit_lapak.php';
 } else {
     include 'views/pages/admin/beranda.php';
 }

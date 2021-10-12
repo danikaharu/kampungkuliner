@@ -18,29 +18,28 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- SummerNote CSS -->
   <link href="<?= $base_url ?>public/assets/plugins/summernote/summernote.min.css" rel="stylesheet">
+  <style>
+    .sidebar-head {
+      background-color: #FBB62B;
+    }
 
+    .nav-blue {
+      background-color: #1584A2;
+    }
+
+    .bg-login {
+      background-image: url('public/dist/img/bg1.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+
+    .pagination>li.active>a,
+    .pagination>li.active>span {
+      background-color: #55C771 !important;
+      border-color: #55C771 !important;
+    }
+  </style>
 </head>
-<style>
-  .sidebar-head {
-    background-color: #FBB62B;
-  }
-
-  .nav-blue {
-    background-color: #1584A2;
-  }
-
-  .bg-login {
-    background-image: url('public/dist/img/bg1.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 0px;
-  }
-
-  .pagination>li.active>a,
-  .pagination>li.active>span {
-    background-color: #55C771 !important;
-    border-color: #55C771 !important;
-  }
-</style>

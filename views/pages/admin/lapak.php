@@ -1,3 +1,6 @@
+<?php
+include 'app/controller/lapak/post.php'
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -41,29 +44,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $i = 1;
-                                $dataLapak = mysqli_query($mysqli, "SELECT * FROM lapak");
-                                while ($d = mysqli_fetch_array($dataLapak)) {
-                                ?>
-                                    <tr>
-                                        <td class="border-0"><?= $i++ ?></td>
-                                        <td class="border-0"><?= $d['id_lapak']; ?></td>
-                                        <td class="border-0 fw-bold">
-                                            <?= $d['nama']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <?= $d['no_telp']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <?= $d['no_wa']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <a href="edit_berita.php?id=<?php echo $d['id_lapak']; ?>"><i class="fas fa-edit"></i></a>
-                                            <a href="aksi/hapus_berita.php?id=<?php echo $d['id_lapak']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                <?php
-                                }
+                                tampil_lapak($mysqli);
                                 ?>
                             </tbody>
                         </table>

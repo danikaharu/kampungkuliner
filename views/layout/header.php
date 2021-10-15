@@ -25,7 +25,9 @@
       background-color: #FBB62B;
     }
 
-    .nav-blue {
+  
+
+    .navbar-blue {
       background-color: #1584A2;
     }
 
@@ -43,5 +45,6 @@
       background-color: #55C771 !important;
       border-color: #55C771 !important;
     }
+
   </style>
 </head>

@@ -3,9 +3,9 @@
   <strong>Copyright &copy; <?= date('Y') ?> </strong> - <i class="fas fa-code"></i> With <i class="fas fa-coffee"></i> & <i class="fas fa-heart"></i> By <a target="_blank" href="https://www.instagram.com/kknmbkm.ombulo2021/">KKN Desa Ombulo Teknik Informatika</a>
 </footer>
 
-  <!-- Control Sidebar -->
+<!-- Control Sidebar -->
 
-  <!-- /.control-sidebar -->
+<!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
@@ -24,7 +24,37 @@
   $(document).ready(function() {
     $('#deskripsi_lapak').summernote();
   });
+  $('#summernote1').summernote({
+    tabsize: 2,
+    height: 300
+  });
+  $(document).ready(function() {
+    $('#summernote2').summernote();
+  });
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".alert").fadeTo(500, 0).slideUp(500, function() {
+        $(this).remove();
+      });
+    }, 2000);
+  });
+
+  $(document).ready(function(){
+    $('#edit').hide();
+  });
+
+  $("#show").click(function() {
+    $("#edit").show();
+    $("#noedit").hide();
+  });
+
+  $("#hide").click(function() {
+    $("#noedit").show();
+    $("#edit").hide();
+  });
 </script>
+
 </body>
 
 </html>

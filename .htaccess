@@ -12,6 +12,7 @@ RewriteRule ^lapak$ admin.php?t_admin=lapak
 RewriteRule ^tambah_lapak$ admin.php?t_admin=tambah_lapak
 RewriteRule ^edit_lapak$ admin.php?t_admin=edit_lapak
 RewriteRule ^profil_ombulo$ admin.php?t_admin=profil_ombulo
+RewriteRule ^profil_yoso$ admin.php?t_admin=profil_yoso
 
 
 

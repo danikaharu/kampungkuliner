@@ -23,7 +23,7 @@ include 'app/controller/lapak/post.php'
     <section class="content">
         <!-- Datatables -->
         <?php
-        input_lapak()
+        input_lapak($mysqli)
         ?>
 
     </section>

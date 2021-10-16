@@ -24,7 +24,37 @@
   $(document).ready(function() {
     $('#deskripsi_lapak').summernote();
   });
+  $('#summernote1').summernote({
+    tabsize: 2,
+    height: 300
+  });
+  $(document).ready(function() {
+    $('#summernote2').summernote();
+  });
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".alert").fadeTo(500, 0).slideUp(500, function() {
+        $(this).remove();
+      });
+    }, 2000);
+  });
+
+  $(document).ready(function(){
+    $('#edit').hide();
+  });
+
+  $("#show").click(function() {
+    $("#edit").show();
+    $("#noedit").hide();
+  });
+
+  $("#hide").click(function() {
+    $("#noedit").show();
+    $("#edit").hide();
+  });
 </script>
+
 </body>
 
 </html>

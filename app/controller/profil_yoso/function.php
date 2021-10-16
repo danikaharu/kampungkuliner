@@ -3,7 +3,7 @@
 function tampil_profil($mysqli)
 {
 
-    $query = $mysqli->query("SELECT * FROM profil WHERE desa = '1'");
+    $query = $mysqli->query("SELECT * FROM profil WHERE desa = '2'");
     $d = $query->fetch_assoc();
 
     if (!isset($d['id_profil'])) {
@@ -16,7 +16,7 @@ function tampil_profil($mysqli)
                         <textarea name="konten" id="summernote1" cols="30" rows="100"></textarea>
                     </div>
                     <div class="form-group">
-                        <button name="simpan_ombulo" class="btn btn-block btn-info" type="submit"><i class="fas fa-save"></i> Simpan</button>
+                        <button name="simpan_yoso" class="btn btn-block btn-info" type="submit"><i class="fas fa-save"></i> Simpan</button>
                     </div>
                 </form>
             </div>
@@ -39,7 +39,7 @@ function tampil_profil($mysqli)
                     </textarea>
                 </div>
                 <div class="form-group">
-                <button type="submit" name="edit_ombulo" class="btn btn-block btn-info"><i class="fas fa-save"></i> Simpan</button>
+                <button type="submit" name="edit_yoso" class="btn btn-block btn-info"><i class="fas fa-save"></i> Simpan</button>
                 </div>
             </form>
             

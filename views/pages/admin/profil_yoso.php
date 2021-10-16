@@ -1,4 +1,4 @@
-<?php include 'app/controller/profil_ombulo/post.php'; ?>
+<?php include 'app/controller/profil_yoso/post.php'; ?>
 <div class="content-wrapper">
   <section class="content-header">
     <div class="container-fluid">
@@ -9,7 +9,7 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="<?= $base_url ?>beranda_admin">Kampung Kuliner</a></li>
-            <li class="breadcrumb-item active">Profil Desa Ombulo</li>
+            <li class="breadcrumb-item active">Profil Desa Yosonegoro</li>
           </ol>
         </div>
       </div>
@@ -19,20 +19,13 @@
     <div class="card">
       <div class="card-header">
         <h3 class="card-title"><?= $title ?></h3>
-        <!-- <div class="card-tools">
-          <ul class="nav nav-pills ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#sales-chart" data-toggle="tab">Tambah Data</a>
-            </li>
-          </ul>
-        </div> -->
       </div>
       <div class="card-body">
         <?php
-        if (isset($_SESSION['msg_simpan_ombulo'])) {
+        if (isset($_SESSION['msg_simpan_yoso'])) {
         ?>
           <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_simpan_ombulo'); ?>
+            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_simpan_yoso'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -41,10 +34,10 @@
         }
         ?>
          <?php
-        if (isset($_SESSION['msg_edit_ombulo'])) {
+        if (isset($_SESSION['msg_edit_yoso'])) {
         ?>
           <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_edit_ombulo'); ?>
+            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_edit_yoso'); ?>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

@@ -21,7 +21,6 @@ include 'app/controller/lapak/post.php'
 
     <!-- Main content -->
     <section class="content">
-
         <div class="row">
             <!-- Datatables -->
             <div class="col-lg-12">
@@ -30,12 +29,47 @@ include 'app/controller/lapak/post.php'
                         <h5 class="m-0 font-weight-bold text-primary">Data Lapak</h5>
                         <a href="<?= $base_url ?>tambah_lapak" class="btn btn-outline-primary mb-1 ml-auto"><i class="fas fa-plus fa-sm"></i></a>
                     </div>
+                    <?php
+                    if (isset($_SESSION['msg_tambah_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_tambah_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    if (isset($_SESSION['msg_edit_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_edit_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    if (isset($_SESSION['msg_hapus_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_hapus_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
                     <div class="table-responsive p-3">
                         <table class="table align-items-center table-flush" id="dataTable">
                             <thead class="thead-light">
                                 <tr>
                                     <th>No</th>
-                                    <th>ID Lapak</th>
                                     <th>Nama Lapak</th>
                                     <th>No Telp</th>
                                     <th>No WhatsApp</th>

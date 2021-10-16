@@ -18,6 +18,10 @@ RewriteRule ^profil_ombulo$ admin.php?t_admin=profil_ombulo
 RewriteRule ^profil_yoso$ admin.php?t_admin=profil_yoso
 
 
+RewriteRule ^profil_desa_ombulo$ index.php?t_user=profil_desa_ombulo
+RewriteRule ^profil_desa_yoso$ index.php?t_user=profil_desa_yoso
+
+
 
 
 # X-XSS-Protection

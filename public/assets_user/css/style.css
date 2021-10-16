@@ -1,0 +1,436 @@
+/* color */
+:root {
+  --main-color: #1584a2;
+  --text-color: #105061;
+  --third-color: #0d4a5a;
+  --fourth-color: #d9f7ff;
+  --backgorund-color: #fbb62b;
+  --help-color: #0fd793;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  z-index: 11;
+}
+
+.shape1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.shape3,
+.shape4 {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.shape2,
+.shape5 {
+  position: absolute;
+  right: 0;
+}
+
+/* Navbar */
+.nav-link {
+  margin-right: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link:focus {
+  border-bottom: 3px solid var(--main-color);
+  color: #fff;
+}
+
+.navbar-custom {
+  background-color: #fbb62b;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navbar-custom .navbar-text,
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-nav .dropdown-item {
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .dropdown-item {
+  color: var(--main-color);
+}
+/* End Navbar */
+
+.btn-custom {
+  background-color: var(--main-color);
+  border-radius: 2rem;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  width: 204px;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 3px solid #fff;
+}
+
+#read-more {
+  z-index: 1000;
+  width: 250px;
+  margin-top: 1.5rem;
+}
+
+/* Section CTA */
+.cta {
+  background-color: var(--backgorund-color);
+  margin-top: 6rem;
+}
+
+.text-head {
+  color: var(--main-color);
+  font-size: 1.563rem;
+  font-weight: 600;
+  margin-bottom: -3px;
+}
+
+.text-main {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+}
+
+.text-submain {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.sub-headline_text {
+  font-weight: 300;
+  font-style: italic;
+  line-height: 38px;
+  color: var(--third-color);
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .shape1 {
+    display: none;
+  }
+}
+/* End Section CTA */
+
+/* Section Etnic Food */
+.etnic-food {
+  background-color: var(--main-color);
+  height: 80vh;
+}
+
+.etnic-text__head {
+  text-align: center;
+  color: var(--fourth-color);
+  width: 600px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+#shadow {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: black;
+  opacity: 0.08;
+  -webkit-filter: blur(10px);
+  -webkit-transform: scale(1.8, 0.1);
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.etnic-text__description {
+  color: var(--fourth-color);
+  font-weight: 600;
+  margin-top: -20px;
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .etnic-food {
+    height: 100%;
+  }
+
+  .etnic-text__head {
+    width: 100%;
+  }
+
+  .shape2 {
+    display: none;
+  }
+}
+/* End Section Etnic Food */
+
+/* Section Sejarah */
+.sejarah {
+  height: 730px;
+  background-color: var(--backgorund-color);
+}
+
+.sejarah-headline {
+  color: var(--third-color);
+}
+
+.sejarah-description {
+  color: var(--third-color);
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .sejarah {
+    height: 100%;
+  }
+}
+
+/* End Section Sejarah */
+
+/* Section Menu */
+.menu {
+  height: 650px;
+  background-color: var(--backgorund-color);
+}
+
+.menu-table {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  height: 380px;
+  padding: 1.2rem;
+}
+
+#trend {
+  margin-top: -40px;
+}
+
+.menu-image {
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.menu-name {
+  color: var(--third-color);
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.menu-price {
+  margin: 0.2rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.menu-button {
+  margin: 1.5rem auto;
+  width: 206px;
+}
+
+.menu-button__buy {
+  background-color: var(--help-color);
+  width: 100px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+.menu-button__detail {
+  background-color: var(--main-color);
+  width: 100px;
+  color: #fff;
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.menu-button__buy-icon {
+  margin-right: 0.1rem;
+  vertical-align: middle;
+}
+
+.menu-button__detail-icon {
+  margin-right: 0.1rem;
+  vertical-align: middle;
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .menu {
+    height: 100%;
+  }
+
+  .menu-table {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    height: auto;
+  }
+
+  .menu-image {
+    width: 100%;
+  }
+
+  .shape3 {
+    display: none;
+  }
+
+  #trend {
+    margin-top: 0;
+  }
+}
+/* End Section Menu */
+
+/* Section Lapak */
+.lapak {
+  height: 100%;
+  background-color: var(--backgorund-color);
+  margin-top: 6rem;
+  padding: 2.5rem;
+}
+
+.lapak-table {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  height: auto;
+  padding: 1.2rem;
+  margin: 2rem 0;
+}
+
+.lapak-head {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.lapak-pagination {
+  margin: 1.5rem 0;
+}
+
+.page-item:first-child .page-link {
+  border-radius: 100%;
+}
+
+.page-link {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin: 0 0.2rem;
+  color: var(--main-color);
+  padding: 0.55rem auto;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link:focus {
+  width: 45px;
+  height: 45px;
+  margin-top: -0.4rem;
+  padding-top: 0.75rem;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.page-item:last-child .page-link {
+  border-radius: 100%;
+}
+
+/* End Section Lapak */
+
+/* Footer */
+.info {
+  background-color: var(--main-color);
+  padding: 2rem;
+}
+
+.info-text__small {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.info-text__bold {
+  font-size: 15px;
+  font-weight: 700;
+  display: inline;
+}
+
+.copyright {
+  background-color: var(--text-color);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.mapouter {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 100%;
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .shape5,
+  .shape6 {
+    display: none;
+  }
+}
+/* End Footer */
+
+/* Section Profil Desa */
+.profil-desa {
+  height: 100%;
+  background-color: var(--backgorund-color);
+  margin-top: 6rem;
+  padding: 5rem;
+}
+
+.profil-desa > h2 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profil-desa > img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+.profil-desa > p {
+  margin-top: 2rem;
+}
+
+/* Ukuran layar HP */
+@media screen and (max-width: 900px) {
+  .profil-desa > img {
+    width: 100%;
+  }
+}
+
+/* End Section Profil Desa */

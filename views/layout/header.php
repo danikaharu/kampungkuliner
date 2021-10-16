@@ -20,12 +20,17 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- SummerNote CSS -->
   <link href="<?= $base_url ?>public/assets/plugins/summernote/summernote.min.css" rel="stylesheet">
+  <link href="<?= $base_url ?>public/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet">
   <style>
     .sidebar-head {
       background-color: #FBB62B;
     }
 
-  
+    .overlay-dark {
+      background-color: rgba(black, 0.4);
+    }
+
+
 
     .navbar-blue {
       background-color: #1584A2;
@@ -45,6 +50,5 @@
       background-color: #55C771 !important;
       border-color: #55C771 !important;
     }
-
   </style>
 </head>

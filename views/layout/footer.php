@@ -20,6 +20,11 @@
 <script src="<?= $base_url ?>public/assets/dist/js/demo.js"></script>
 <!-- SummerNote js -->
 <script src="<?= $base_url ?>public/assets/plugins/summernote/summernote.min.js"></script>
+
+<script src="<?= $base_url ?>public/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= $base_url ?>public/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+
 <script>
   $(document).ready(function() {
     $('#deskripsi_lapak').summernote();
@@ -40,7 +45,7 @@
     }, 2000);
   });
 
-  $(document).ready(function(){
+  $(document).ready(function() {
     $('#edit').hide();
   });
 
@@ -52,6 +57,18 @@
   $("#hide").click(function() {
     $("#noedit").show();
     $("#edit").hide();
+  });
+
+  $(function() {
+    $('#dataTable').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
   });
 </script>
 

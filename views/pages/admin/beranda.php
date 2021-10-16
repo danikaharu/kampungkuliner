@@ -19,21 +19,27 @@
   <!-- Main content -->
   <section class="content">
 
-    <!-- Default box -->
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Title</h3>
-      </div>
-      <div class="card-body">
-
-      </div>
-      <!-- /.card-body -->
-      <div class="card-footer">
-        Footer
-      </div>
-      <!-- /.card-footer-->
-    </div>
-    <!-- /.card -->
+  
+        <div class="row">
+          <div class="overlay-dark col-md-12 col-lg-6 ">
+            <div class="card mb-2 bg-gradient-dark">
+              <img class="card-img-top" height="350" src="<?= $base_url ?>public/assets/dist/img/ombulo.jpeg" alt="Dist Photo 1">
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h1 class=" text-primary text-white">Kampung Kuliner</h1>
+                <p class="card-text text-white pb-2 pt-1">Desa Ombulo, Kecamatan Limboto Barat, Kabupaten Gorontalo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 ">
+            <div class="card mb-2 bg-gradient-dark">
+              <img class="card-img-top" height="350" src="<?= $base_url ?>public/assets/dist/img/yoso.jpeg" alt="Dist Photo 1">
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h1 class="text-primary text-white">Kampung Kuliner</h1>
+                <p class="card-text text-white pb-2 pt-1">Desa Yoso, Kecamatan Limboto Barat, Kabupaten Gorontalo</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
   </section>
   <!-- /.content -->

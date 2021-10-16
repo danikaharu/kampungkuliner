@@ -43,26 +43,26 @@ function input_lapak()
                 <form action="lapak" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="judul">Nama Lapak</label>
-                        <input type="text" class="form-control" id="nama_lapak" aria-describedby="nama_lapak" name="nama_lapak">
+                        <input type="text" class="form-control" id="nama_lapak" aria-describedby="nama_lapak" name="nama_lapak" required>
                     </div>
                     <div class="form-group">
                         <label for="isi">Deskripsi</label>
-                        <textarea type="text" class="form-control" id="deskripsi_lapak" placeholder="" rows="5" name="deskripsi_lapak"></textarea>
+                        <textarea type="text" class="form-control" id="deskripsi_lapak" placeholder="" rows="5" name="deskripsi_lapak" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="gambar">File Gambar</label>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile" name="gambar">
+                            <input type="file" class="custom-file-input" id="customFile" name="gambar" required>
                             <label class="custom-file-label" for="customFile">Choose file</label>
                         </div>
                     </div>
                     <div class="mb-4">
                         <label for="">Nomor Telepon</label>
-                        <input type="number" class="form-control" id="no_telp" name="no_telp">
+                        <input type="number" class="form-control" id="no_telp" name="no_telp" required>
                     </div>
                     <div class="mb-4">
                         <label for="">Nomor WhatsApp</label>
-                        <input type="number" class="form-control" id="no_wa" name="no_wa">
+                        <input type="number" class="form-control" id="no_wa" name="no_wa" required>
                     </div>
                     <button type="submit" name="simpan_lapak" class="btn btn-primary">Simpan</button>
                 </form>
@@ -82,28 +82,28 @@ function edit_lapak($base_url, $mysqli, $id)
             <div class="form-group">
                 <input type="text" class="form-control" id="id_lapak" aria-describedby="id_lapak" name="id_lapak" value="<?= $d['id_lapak']; ?>" hidden>
                 <label for="judul">Nama Lapak</label>
-                <input type="text" class="form-control" id="nama_lapak" aria-describedby="nama_lapak" name="nama_lapak" value="<?= $d['nama']; ?>">
+                <input type="text" class="form-control" id="nama_lapak" aria-describedby="nama_lapak" name="nama_lapak" value="<?= $d['nama']; ?>" required>
             </div>
             <div class="form-group">
                 <label for="isi">Deskripsi</label>
-                <textarea type="text" class="form-control" id="deskripsi_lapak" placeholder="" rows="5" name="deskripsi_lapak"><?= $d['deskripsi']; ?></textarea>
+                <textarea type="text" class="form-control" id="deskripsi_lapak" placeholder="" rows="5" name="deskripsi_lapak" required><?= $d['deskripsi']; ?></textarea>
             </div>
             <div class="form-group">
                 <label for="gambar">File Gambar</label><br>
                 <img class="mb-3 mt-2" width="200" src="<?= $base_url ?>public/assets/image/<?= $d['gambar'] ?>" alt="">
                 <div class="custom-file">
                     <input type="text" value="<?= $d['gambar'] ?>" name="gambar_sebelumnya">
-                    <input type="file" class="custom-file-input" id="customFile" name="gambar">
+                    <input type="file" class="custom-file-input" id="customFile" name="gambar" required>
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
             </div>
             <div class="mb-4">
                 <label for="">Nomor Telepon</label>
-                <input type="number" class="form-control" id="no_telp" name="no_telp" value="<?= $d['no_telp']; ?>">
+                <input type="number" class="form-control" id="no_telp" name="no_telp" value="<?= $d['no_telp']; ?>" required>
             </div>
             <div class="mb-4">
                 <label for="">Nomor WhatsApp</label>
-                <input type="number" class="form-control" id="no_wa" name="no_wa" value="<?= $d['no_wa']; ?>">
+                <input type="number" class="form-control" id="no_wa" name="no_wa" value="<?= $d['no_wa']; ?>" required>
             </div>
             <button type="submit" name="edit_lapak" class="btn btn-primary">Simpan</button>
         </form>

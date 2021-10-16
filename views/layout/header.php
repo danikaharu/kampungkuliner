@@ -25,7 +25,11 @@
       background-color: #FBB62B;
     }
 
-  
+    .overlay-dark {
+      background-color: rgba(black, 0.4);
+    }
+
+
 
     .navbar-blue {
       background-color: #1584A2;
@@ -45,6 +49,5 @@
       background-color: #55C771 !important;
       border-color: #55C771 !important;
     }
-
   </style>
 </head>

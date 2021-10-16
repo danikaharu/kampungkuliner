@@ -1,3 +1,6 @@
+<?php
+include 'app/controller/lapak/post.php'
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -18,7 +21,6 @@
 
     <!-- Main content -->
     <section class="content">
-
         <div class="row">
             <!-- Datatables -->
             <div class="col-lg-12">
@@ -27,12 +29,47 @@
                         <h5 class="m-0 font-weight-bold text-primary">Data Lapak</h5>
                         <a href="<?= $base_url ?>tambah_lapak" class="btn btn-outline-primary mb-1 ml-auto"><i class="fas fa-plus fa-sm"></i></a>
                     </div>
+                    <?php
+                    if (isset($_SESSION['msg_tambah_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_tambah_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    if (isset($_SESSION['msg_edit_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_edit_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                    <?php
+                    if (isset($_SESSION['msg_hapus_lapak'])) {
+                    ?>
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span class="fas fa-check fe-16 mr-2"></span> <?= flash('msg_hapus_lapak'); ?>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php
+                    }
+                    ?>
                     <div class="table-responsive p-3">
                         <table class="table align-items-center table-flush" id="dataTable">
                             <thead class="thead-light">
                                 <tr>
                                     <th>No</th>
-                                    <th>ID Lapak</th>
                                     <th>Nama Lapak</th>
                                     <th>No Telp</th>
                                     <th>No WhatsApp</th>
@@ -41,29 +78,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                $i = 1;
-                                $dataLapak = mysqli_query($mysqli, "SELECT * FROM lapak");
-                                while ($d = mysqli_fetch_array($dataLapak)) {
-                                ?>
-                                    <tr>
-                                        <td class="border-0"><?= $i++ ?></td>
-                                        <td class="border-0"><?= $d['id_lapak']; ?></td>
-                                        <td class="border-0 fw-bold">
-                                            <?= $d['nama']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <?= $d['no_telp']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <?= $d['no_wa']; ?>
-                                        </td>
-                                        <td class="border-0">
-                                            <a href="edit_berita.php?id=<?php echo $d['id_lapak']; ?>"><i class="fas fa-edit"></i></a>
-                                            <a href="aksi/hapus_berita.php?id=<?php echo $d['id_lapak']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                <?php
-                                }
+                                tampil_lapak($mysqli);
                                 ?>
                             </tbody>
                         </table>

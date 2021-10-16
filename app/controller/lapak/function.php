@@ -18,8 +18,13 @@ function tampil_lapak($mysqli)
                 <?= $d['no_wa']; ?>
             </td>
             <td class="border-0">
-                <a href="edit_lapak/<?= $d['id_lapak']; ?>"><i class="fas fa-edit"></i></a>
-                <a href="hapus_lapak/<?= $d['id_lapak']; ?>" <?php echo $d['id_lapak']; ?>" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></a>
+
+                <form action="" method="post">
+                    <input type="text" name="id_lapak" value="<?= $d['id_lapak'] ?>" hidden>
+                    <input type="text" name="gambar" value="<?= $d['gambar'] ?>" hidden>
+                    <a class="btn btn-success btn-xs" href="edit_lapak/<?= $d['id_lapak']; ?>"><i class="fas fa-edit"></i></a>
+                    <button class="btn btn-danger btn-xs" type="submit" name="hapus_lapak" onclick="return confirm('Anda Yakin?')"><i class="fas fa-trash"></i></button>
+                </form>
             </td>
         </tr>
     <?php
@@ -73,8 +78,9 @@ function edit_lapak($base_url, $mysqli, $id)
     $dataLapak = mysqli_query($mysqli, "SELECT * FROM lapak WHERE id_lapak='$id_lapak'");
     while ($d = mysqli_fetch_array($dataLapak)) {
     ?>
-        <form action="lapak.php" method="post" enctype="multipart/form-data">
+        <form action="<?= $base_url ?>lapak" method="post" enctype="multipart/form-data">
             <div class="form-group">
+                <input type="text" class="form-control" id="id_lapak" aria-describedby="id_lapak" name="id_lapak" value="<?= $d['id_lapak']; ?>" hidden>
                 <label for="judul">Nama Lapak</label>
                 <input type="text" class="form-control" id="nama_lapak" aria-describedby="nama_lapak" name="nama_lapak" value="<?= $d['nama']; ?>">
             </div>
@@ -86,6 +92,7 @@ function edit_lapak($base_url, $mysqli, $id)
                 <label for="gambar">File Gambar</label><br>
                 <img class="mb-3 mt-2" width="200" src="<?= $base_url ?>public/assets/image/<?= $d['gambar'] ?>" alt="">
                 <div class="custom-file">
+                    <input type="text" value="<?= $d['gambar'] ?>" name="gambar_sebelumnya">
                     <input type="file" class="custom-file-input" id="customFile" name="gambar">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
@@ -98,7 +105,7 @@ function edit_lapak($base_url, $mysqli, $id)
                 <label for="">Nomor WhatsApp</label>
                 <input type="number" class="form-control" id="no_wa" name="no_wa" value="<?= $d['no_wa']; ?>">
             </div>
-            <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+            <button type="submit" name="edit_lapak" class="btn btn-primary">Simpan</button>
         </form>
 <?php
     }

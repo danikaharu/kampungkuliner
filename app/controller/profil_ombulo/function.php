@@ -39,10 +39,10 @@ function tampil_profil($mysqli)
                     </textarea>
                 </div>
                 <div class="form-group">
-                <button type="submit" name="edit_ombulo" class="btn btn-block btn-info"><i class="fas fa-save"></i> Simpan</button>
+                    <button type="submit" name="edit_ombulo" class="btn btn-block btn-info"><i class="fas fa-save"></i> Simpan</button>
                 </div>
             </form>
-            
+
         </div>
 
 

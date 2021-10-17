@@ -1,8 +1,18 @@
 <?php
-
+session_start();
 include 'app/env.php';
 include 'base_url.php';
 
+include 'app/session.php';
+if (!isset($_SESSION['unique_user'])) {
+?>
+    <script>
+        alert('Anda harus login untuk mengakses halaman ini!');
+        window.location.href = '<?= $base_url; ?>';
+    </script>
+<?php
+    return false;
+}
 
 if (isset($_GET['t_admin']) && $_GET['t_admin'] == 'beranda_admin') {
     $title = 'Beranda';

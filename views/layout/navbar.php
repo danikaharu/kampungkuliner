@@ -21,7 +21,7 @@
             <i class="far fa-user"></i> Administrator
           </a>
           <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">
+            <a href="<?= $base_url ?>app/logout.php" class="dropdown-item">
               <i class="fas fa-sign-out-alt"></i> Logout
             </a>
           </div>

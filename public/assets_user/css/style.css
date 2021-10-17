@@ -120,6 +120,10 @@ nav {
   color: var(--third-color);
 }
 
+.f-12{
+  font-size: 15px;
+}
+
 /* Ukuran layar HP */
 @media screen and (max-width: 900px) {
   .shape1 {
@@ -246,8 +250,10 @@ nav {
   width: 100px;
   color: #fff;
   font-weight: 700;
-  padding: 0.5rem;
   font-size: 15px;
+}
+.menu-button__buy:hover {
+  color: #fff;
 }
 
 .menu-button__detail {

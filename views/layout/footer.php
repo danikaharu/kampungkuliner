@@ -22,7 +22,10 @@
 <script src="<?= $base_url ?>public/assets/plugins/summernote/summernote.min.js"></script>
 <script>
   $(document).ready(function() {
-    $('#deskripsi_lapak').summernote();
+    $('#deskripsi_lapak').summernote({
+      tabsize:2,
+      height :250
+    });
   });
   $('#summernote1').summernote({
     tabsize: 2,

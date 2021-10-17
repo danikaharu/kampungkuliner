@@ -21,15 +21,15 @@
               <a class="nav-link dropdown-toggle text-brown" data-toggle="dropdown" href="#" role="button"
                 aria-haspopup="true" aria-expanded="false">Profil</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="/profil.html">Kampung Kuliner</a>
+                <a class="dropdown-item" href="profil_kampung_kuliner">Kampung Kuliner</a>
                 <a class="dropdown-item" href="profil_desa_ombulo">Desa Ombulo</a>
-                <a class="dropdown-item" href="/profil.html">Desa Yosonegoro</a>
+                <a class="dropdown-item" href="profil_desa_yoso">Desa Yosonegoro</a>
 
               </div>
 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/lapak.html">Lapak</a>
+              <a class="nav-link" href="daftar_lapak">Lapak</a>
             </li>
             <button href="/login" class="btn btn-custom my-2 my-sm-0">Masuk</button>
           </ul>

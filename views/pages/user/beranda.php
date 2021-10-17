@@ -1,3 +1,6 @@
+<?php
+include 'app/controller/user/function.php';
+?>
 <section class="hero">
       <div class="container">
         <div class="row">
@@ -15,8 +18,8 @@
                 nostalgia !</p>
             </div>
             <div class="call-to-action">
-              <button class="btn btn-custom my-2">Selengkapnya</button>
-              <button class="btn btn-custom my-2">Lapak</button>
+              <a href="daftar_lapak" class="btn btn-custom my-2">Lapak</a>
+              <a href="profil_kampung_kuliner" class="btn btn-custom my-2">Selengkapnya</a>
             </div>
           </div>
           <div class="col-12 col-md-6 mb-5 pt-5 align-self-center">
@@ -77,7 +80,7 @@
               Wisata Kuliner guna meningkatkan ekonomi masyarakat juga (perbaiki dpe narasi dong wkwkwkwk) </p>
           </div>
           <div class="sejarah-button">
-            <button class="btn btn-custom">Selengkapnya</button>
+            <a href="profil_kampung_kuliner" class="btn btn-custom">Selengkapnya</a>
           </div>
         </div>
       </div>
@@ -92,60 +95,10 @@
         <img src="<?= $base_url ?>public/assets_user/image/shape3.svg" alt="">
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="menu-table">
-            <img src="<?= $base_url ?>public/assets_user/image/gambar2.png" alt="" class="menu-image">
-            <p class="menu-name">Nasi Bulu - Om Bulo</p>
-            <p class="menu-price">Rp.2,500 - Rp.30,000</p>
-            <div class="menu-button">
-              <button class="btn menu-button__buy">
-                <img src="<?= $base_url ?>public/assets_user/image/whatsapp.svg" alt="" class="menu-button__buy-icon">
-                Beli
-              </button>
-              <button class="btn menu-button__detail">
-                <img src="<?= $base_url ?>public/assets_user/image/info.svg" alt="" class="menu-button__detail-icon">
-                Detail
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="menu-table" id="trend">
-            <img src="<?= $base_url ?>public/assets_user/image/gambar2.png" alt="" class="menu-image">
-            <p class="menu-name">Nasi Bulu - Om Bulo</p>
-            <p class="menu-price">Rp.2,500 - Rp.30,000</p>
-            <div class="menu-button">
-              <button class="btn menu-button__buy">
-                <img src="<?= $base_url ?>public/assets_user/image/whatsapp.svg" alt="" class="menu-button__buy-icon">
-                Beli
-              </button>
-              <button class="btn menu-button__detail">
-                <img src="<?= $base_url ?>public/assets_user/image/info.svg" alt="" class="menu-button__detail-icon">
-                Detail
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="menu-table">
-            <img src="<?= $base_url ?>public/assets_user/image/gambar2.png" alt="" class="menu-image">
-            <p class="menu-name">Nasi Bulu - Om Bulo</p>
-            <p class="menu-price">Rp.2,500 - Rp.30,000</p>
-            <div class="menu-button">
-              <button class="btn menu-button__buy">
-                <img src="<?= $base_url ?>public/assets_user/image/whatsapp.svg" alt="" class="menu-button__buy-icon">
-                Beli
-              </button>
-              <button class="btn menu-button__detail">
-                <img src="<?= $base_url ?>public/assets_user/image/info.svg" alt="" class="menu-button__detail-icon">
-                Detail
-              </button>
-            </div>
-          </div>
-        </div>
+       <?php tampil_lapak_beranda($base_url,$mysqli) ?>
       </div>
       <div class="text-center">
-        <button id="read-more" class="btn btn-custom">Lihat Lebih Banyak</button>
+        <a href="daftar_lapak" id="read-more" class="btn btn-custom">Lihat Lebih Banyak</a>
       </div>
     </div>
   </section>

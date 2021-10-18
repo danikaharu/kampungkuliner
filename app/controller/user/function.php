@@ -50,7 +50,7 @@ function tampil_lapak_beranda($base_url, $mysqli)
                 <div class="f-12"><i class="fas fa-phone"></i> Whatsapp : <?= $d['no_wa'] ?></div>
               </div>
               <div class="col-12">
-                <p><?= $d['deskripsi']; ?></p>
+                <div><?= $d['deskripsi']; ?></div>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ if ( window.history.replaceState ) {
                 <div class="f-12"><i class="fas fa-phone"></i> Whatsapp : <?= $tampil['no_wa'] ?></div>
               </div>
               <div class="col-12">
-                <p><?= $tampil['deskripsi']; ?></p>
+                <div><?= $tampil['deskripsi']; ?></div>
               </div>
             </div>
           </div>

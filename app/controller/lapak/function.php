@@ -67,7 +67,7 @@ function input_lapak()
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="">No Telepon</label>
+                        <label for="">No wa</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">+62</span>
@@ -110,14 +110,25 @@ function edit_lapak($base_url, $mysqli, $id)
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
             </div>
-            <div class="mb-4">
-                <label for="">Nomor Telepon</label>
-                <input type="number" class="form-control" id="no_telp" name="no_telp" value="<?= $d['no_telp']; ?>">
-            </div>
-            <div class="mb-4">
-                <label for="">Nomor WhatsApp</label>
-                <input type="number" class="form-control" id="no_wa" name="no_wa" value="<?= $d['no_wa']; ?>">
-            </div>
+            <div class="form-group">
+                        <label for="">No Telepon</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">+62</span>
+                            </div>
+                            <input type="number" class="form-control" id="no_telp" name="no_telp" value="<?= $d['no_telp']; ?>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">No wa</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">+62</span>
+                            </div>
+                            <input type="number" class="form-control" id="no_wa" name="no_wa" value="<?= $d['no_wa']; ?>">
+                        </div>
+                    </div>
+            
             <button type="submit" name="edit_lapak" class="btn btn-primary">Simpan</button>
         </form>
 <?php

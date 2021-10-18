@@ -129,7 +129,7 @@ function edit_lapak($base_url, $mysqli, $id)
                         </div>
                     </div>
             
-            <button type="submit" name="edit_lapak" class="btn btn-primary">Simpan</button>
+            <button type="submit" name="edit_lapak" class="btn btn-info"><i class="fas fa-save"></i> Simpan</button>
         </form>
 <?php
     }

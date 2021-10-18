@@ -69,8 +69,8 @@ include 'app/controller/lapak/post.php'
                     </div>
                   
                     <div class="table-responsive p-3">
-                        <table class="table align-items-center" id="dataTable">
-                            <thead class="thead-light">
+                        <table class="table table-striped align-items-center" id="dataTable">
+                            <thead >
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Lapak</th>

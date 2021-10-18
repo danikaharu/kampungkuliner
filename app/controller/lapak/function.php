@@ -56,15 +56,28 @@ function input_lapak()
                             <label class="custom-file-label" for="customFile">Choose file</label>
                         </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="">Nomor Telepon</label>
-                        <input type="number" class="form-control" id="no_telp" name="no_telp">
+
+                    <div class="form-group">
+                        <label for="">No Telepon</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">+62</span>
+                            </div>
+                            <input type="number" id="no_telp" name="no_telp" class="form-control">
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label for="">Nomor WhatsApp</label>
-                        <input type="number" class="form-control" id="no_wa" name="no_wa">
+                    <div class="form-group">
+                        <label for="">No Telepon</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">+62</span>
+                            </div>
+                            <input type="number" id="no_wa" name="no_wa" class="form-control">
+                        </div>
                     </div>
-                    <button type="submit" name="simpan_lapak" class="btn btn-primary">Simpan</button>
+                    
+                    <button type="submit" name="simpan_lapak" class="btn btn-info"><i class="fas fa-save"></i> Simpan</button>
+                    <a href="lapak" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Kembali</a>
                 </form>
             </div>
         </div>

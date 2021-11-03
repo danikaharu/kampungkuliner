@@ -28,15 +28,14 @@
               <div class="col-md-6">
                 <h5>Informasi</h5>
                 <p>Wiradesa oleh HMJ Bastrasia</p>
+                <p>Fakultas Sastra dan Budaya Universitas Negeri Gorontalo</p>
               </div>
               <div class="col-md-6">
                 <h5>Kontak</h5>
-                <p class="info-text__small">Email : <span class="info-text__bold">kwk.omyoso@gmail.com</span> </p>
-                <p class="info-text__small">Telefon : <span class="info-text__bold">(+62) 812 - 3456 - 7890</span>
+                <p class="info-text__small">Telp : <span class="info-text__bold">(+62) 813 - 5097 - 6924</span>
                 </p>
-                <p class="info-text__small">Facebook : <span class="info-text__bold">Kampung Wisata Kuliner Om
-                    Yoso</span> </p>
-                <p class="info-text__small">Instagram : <span class="info-text__bold"> @kwk.omyoso</span> </p>
+                <p class="info-text__small">Facebook : <span class="info-text__bold">Kmpungkuliner Limboto Barat</span> </p>
+                <p class="info-text__small">Instagram : <span class="info-text__bold"> @kampungwisatakuliner_limbar</span> </p>
               </div>
             </div>
           </div>

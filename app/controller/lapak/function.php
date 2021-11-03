@@ -12,10 +12,22 @@ function tampil_lapak($mysqli)
                 <?= $d['nama']; ?>
             </td>
             <td class="border-0">
-                <?= $d['no_telp']; ?>
+                <?php
+                  if(empty($d['no_telp'])){
+                      echo '-'; 
+                  }else{
+                      echo "+62".$d['no_telp'];
+                  }
+                ?>
             </td>
             <td class="border-0">
-                <?= $d['no_wa']; ?>
+                <?php
+                  if(empty($d['no_wa'])){
+                      echo '-'; 
+                  }else{
+                      echo "+62".$d['no_wa'];
+                  }
+                ?>
             </td>
             <td class="border-0">
 
@@ -129,7 +141,7 @@ function edit_lapak($base_url, $mysqli, $id)
                         </div>
                     </div>
             
-            <button type="submit" name="edit_lapak" class="btn btn-info"><i class="fas fa-save"></i> SimpanGIT</button>
+            <button type="submit" name="edit_lapak" class="btn btn-info"><i class="fas fa-save"></i> Simpan</button>
             <a href="<?= $base_url ?>lapak" class="btn btn-warning"><i class="fas fa-arrow-left"></i> Kembali</a>
         </form>
 <?php

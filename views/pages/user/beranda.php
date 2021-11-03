@@ -62,7 +62,7 @@ include 'app/controller/user/function.php';
   <section class="sejarah">
     <div class="container">
       <div class="shape2">
-        <img src="<?= $base_url ?>public/assets_user/image/shape2.svg" alt="">
+        <img src="<?= $base_url ?>public/assets_user/image/shape2.svg" width="205" alt="">
       </div>
       <div class="row pt-5">
         <div class="col-md-7 my-5">
@@ -70,14 +70,10 @@ include 'app/controller/user/function.php';
         </div>
         <div class="col-md-5 my-5 py-2">
           <div class="sejarah-headline">
-            <h2>Sejarah Kampung Wisata Kuliner Om Yoso</h2>
+            <h2>Profil Kampung Kuliner</h2>
           </div>
-          <div class="sejarah-description">
-            <p>Kampung Wisata Kuliner OmYoso terdiri dari 2 Desa yang ada di Limboto Barat yang saling bekerja sama,
-              yaitu Desa Ombulo dan Desa Yosonegoro. Jalan [Apa depe nama?] menjadi penghubung dari ke dua desa
-              tersebut. Jalan [Apa depe nama?] ini merupakkan pusat masyarakat penjual Nasi Bulu berjualan, melihat hal
-              ini maka Mahasiswa HMJ Bastaria UNG menjadi penghubung Desa Ombulo dan Yosonegoro untuk merintis Kampung
-              Wisata Kuliner guna meningkatkan ekonomi masyarakat juga (perbaiki dpe narasi dong wkwkwkwk) </p>
+          <div class="sejarah-description text-justify">
+            <p>Sudah menjadi kebiasaan kita memilih untuk berwisata kuliner di restoran atau warung makan tradisional. Banyak sekali restoran atau warung makan yang menghidangkan berbagai kuliner yang menjadi ciri khas suatu tempat. Bukankah menikmati suatu hidangan di tempat aslinya akan lebih terasa nikmat? Ada ketertarikan tersendiri  ketika berkunjung ke suatu tempat sambil kita kulineran bukan? Hal ini jelas kita rasakan ketika kita menjadi konsumen.</p>
           </div>
           <div class="sejarah-button">
             <a href="profil_kampung_kuliner" class="btn btn-custom">Selengkapnya</a>

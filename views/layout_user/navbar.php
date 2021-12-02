@@ -24,7 +24,7 @@
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="profil_kampung_kuliner">Kampung Kuliner</a>
                 <a class="dropdown-item" href="profil_desa_ombulo">Desa Ombulo</a>
-                <a class="dropdown-item" href="profil_desa_yoso">Desa Yosonegoro</a>
+                <!-- <a class="dropdown-item" href="profil_desa_yoso">Desa Yosonegoro</a> -->
 
               </div>
 
@@ -50,7 +50,7 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header"  style="background-color: #fbb62b;">
+      <div class="modal-header"  style="background-color: #55c771;">
         <h5 class="modal-title text-white" id="exampleModalLabel">Login | Kampung Kuliner</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -67,7 +67,7 @@
               <input type="password" name="password" class="form-control" id="">
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-info btn-block" name="login">Login</button>
+              <button type="submit" class="btn btn-success btn-block" name="login">Login</button>
             </div>
         </form>
       </div>

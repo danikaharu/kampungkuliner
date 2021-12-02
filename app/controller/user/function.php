@@ -33,7 +33,7 @@ function tampil_lapak_beranda($base_url, $mysqli)
     <div class="modal fade bd-example-modal-lg<?= $d['id_lapak'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header" style="background-color: #fbb62b;">
+          <div class="modal-header" style="background-color: #55c771;">
             <div class="modal-title text-white">Detail Lapak</div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -125,7 +125,7 @@ function tampil_daftar_lapak($base_url, $mysqli)
       <div class="modal fade bd-example-modal-lg<?= $tampil['id_lapak'] ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
-            <div class="modal-header" style="background-color: #fbb62b;">
+            <div class="modal-header" style="background-color: #55c771;">
               <div class="modal-title text-white">Detail Lapak</div>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

@@ -21,7 +21,7 @@
 
   
         <div class="row">
-          <div class="overlay-dark col-md-12 col-lg-6 ">
+          <div class="overlay-dark col-md-12 col-lg-12 ">
             <div class="card mb-2 bg-gradient-dark">
               <img class="card-img-top" height="350" src="<?= $base_url ?>public/assets/dist/img/ombulo.jpeg" alt="Dist Photo 1">
               <div class="card-img-overlay d-flex flex-column justify-content-end">
@@ -30,15 +30,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-lg-6 ">
-            <div class="card mb-2 bg-gradient-dark">
-              <img class="card-img-top" height="350" src="<?= $base_url ?>public/assets/dist/img/yoso.jpeg" alt="Dist Photo 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end">
-                <h1 class="text-primary text-white">Kampung Kuliner</h1>
-                <p class="card-text text-white pb-2 pt-1">Desa Yoso, Kecamatan Limboto Barat, Kabupaten Gorontalo</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
   </section>
